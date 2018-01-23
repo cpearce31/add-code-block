@@ -12,11 +12,15 @@ that appears in READMEs or other documentation.
 
 With this in the markdown of a file called README.md:
 
-&lt;!-- start code block file="./example.js" --&gt;
+```
+
+<!-- start code block file="./example.js" -->
 
 This gets replaced with the contents of `./example.js`
 
-&lt;!-- end code block --&gt;
+<!-- end code block -->
+
+```
 
 running:
 
@@ -27,17 +31,14 @@ add-code-block README.bak >README.md
 
 produces:
 
-<!-- start code block file="./example.js" -->
-```js
-'use strict'
+    <!-- start code block file="./example.js" -->
+    ```js
+    'use strict'
 
-module.exports = {
-  sync: (value) => value,
-  async: (value, cb) => setTimeout(() => cb(null, value), 0),
-  promise: (value) => Promise.resolve(value)
-}
-
-```
-<!-- end code block -->
-
-Check the markdown source to see exactly what happens.
+    module.exports = {
+      sync: (value) => value,
+      async: (value, cb) => setTimeout(() => cb(null, value), 0),
+      promise: (value) => Promise.resolve(value)
+    }
+    ```
+    <!-- end code block -->

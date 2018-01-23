@@ -1,6 +1,6 @@
 {
   "name": "add-code-block",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A small script that injects snippets of code into Markdown files.",
   "main": "bin/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "author": "Caleb Pearce",
   "license": "ISC",
-  "homepage": "https://github.com/cpearce31/add-code-block", 
+  "homepage": "https://github.com/cpearce31/add-code-block",
   "bin": {
     "add-code-block": "bin/index.js"
   }
