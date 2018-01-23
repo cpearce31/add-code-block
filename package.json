@@ -1,11 +1,14 @@
 {
   "name": "add-code-block",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A small script that injects snippets of code into Markdown files.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Caleb Pearce",
-  "license": "ISC"
+  "license": "ISC",
+  "bin": {
+    "add-code-block": "bin/index.js"
+  }
 }
